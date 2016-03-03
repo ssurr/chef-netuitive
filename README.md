@@ -17,13 +17,13 @@ TODO: List your supported platforms.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['netuitive']['version']</tt></td>
+    <td><tt>node['netuitive']['version']</tt></td>
     <td>string</td>
     <td>The version of the agent to install</td>
     <td><tt>'0.2.2-68'</tt></td>
   </tr>
   <tr>
-    <td><tt>['netuitive']['repo']['urls']</tt></td>
+    <td><tt>node['netuitive']['repo']['urls']</tt></td>
     <td>Hash</td>
     <td>A hash of platform specific repo urls</td>
     <td><tt>{
@@ -33,7 +33,7 @@ TODO: List your supported platforms.
     </tt></td>
   </tr>
   <tr>
-    <td><tt>['netuitive']['repo']['keys']</tt></td>
+    <td><tt>node['netuitive']['repo']['keys']</tt></td>
     <td>Hash</td>
     <td>A hash of platform specific repo gpg key locations</td>
     <td><tt>{
@@ -43,7 +43,7 @@ TODO: List your supported platforms.
     </tt></td>
   </tr>
   <tr>
-    <td><tt>['netuitive']['repo']['components']</tt></td>
+    <td><tt>node['netuitive']['repo']['components']</tt></td>
     <td>Hash</td>
     <td>A hash of platform specific compnents</td>
     <td><tt>{
