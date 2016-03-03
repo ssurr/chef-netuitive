@@ -1,1 +1,1 @@
-netutive_install 'netuitive-agent'
+netuitive_install 'netuitive-agent'

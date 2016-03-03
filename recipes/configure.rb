@@ -1,1 +1,1 @@
-netutive_configure 'netuitive'
+netuitive_configure 'netuitive'

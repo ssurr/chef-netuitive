@@ -1,6 +1,6 @@
-class NetutiveCookbook::NetutiveInstallProvider < Chef::Provider::LWRPBase
-  include NetutiveCookbook::Helpers
-  provides :netutive_install
+class NetuitiveCookbook::NetuitiveInstallProvider < Chef::Provider::LWRPBase
+  include NetuitiveCookbook::Helpers
+  provides :netuitive_install
 
   action :install do
     package new_resource.package_name

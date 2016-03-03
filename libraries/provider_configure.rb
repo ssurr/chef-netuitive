@@ -1,6 +1,6 @@
-class NetutiveCookbook::NetutiveConfigureProvider < Chef::Provider::LWRPBase
-  include NetutiveCookbook::Helpers
-  provides :netutive_configure
+class NetuitiveCookbook::NetuitiveConfigureProvider < Chef::Provider::LWRPBase
+  include NetuitiveCookbook::Helpers
+  provides :netuitive_configure
 
   action :create do
     # the default template for netuitive with your API key
@@ -10,9 +10,10 @@ class NetutiveCookbook::NetutiveConfigureProvider < Chef::Provider::LWRPBase
       variables(
         api_key: new_resource.api_key
       )
+      notifies :restart, 'service[netuitive-agent]'
     end
     service 'netuitive-agent' do
-      init_command '/opt/netuitive-agent/netuitive/init.d/netuitive-agent-lsb'
+      init_command '/etc/init/netuitive-agent.conf'
       subscribes :restart, new_resource.conf_path.to_s
     end
   end
