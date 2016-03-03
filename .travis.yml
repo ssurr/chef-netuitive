@@ -1,0 +1,21 @@
+language: generic
+
+env:
+  global:
+  - PATH="/opt/chefdk/bin:/opt/chef/bin:/opt/chef/embedded/bin:/opt/chefdk/embedded/bin:$PATH"
+
+# install:
+#   - sudo apt-get update -q
+#   - sudo apt-get install -q virtualbox --fix-missing
+#   - sudo wget -nv https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1_x86_64.deb
+#   - sudo dpkg -i vagrant_1.8.1_x86_64.deb
+#   - bundle install
+
+addons:
+  apt:
+    sources:
+    - chef-stable-precise
+    packages:
+    - chefdk
+
+script: make rubotest
