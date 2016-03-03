@@ -1,6 +1,6 @@
-class NetutiveCookbook::NetutiveRepoProvider < Chef::Provider::LWRPBase
-  include NetutiveCookbook::Helpers
-  provides :netutive_repo
+class NetuitiveCookbook::NetuitiveRepoProvider < Chef::Provider::LWRPBase
+  include NetuitiveCookbook::Helpers
+  provides :netuitive_repo
 
   action :add do
     platform = determine_platform
@@ -21,7 +21,7 @@ class NetutiveCookbook::NetutiveRepoProvider < Chef::Provider::LWRPBase
     when 'debian'
       include_recipe 'apt'
       # add repo and key
-      apt_repository 'netutive' do
+      apt_repository 'netuitive' do
         uri new_resource.repo_urls['debian']
         key new_resource.repo_keys['debian']
         components new_resource.repo_components['debian']

@@ -1,1 +1,2 @@
-netutive_configure 'netuitive'
+netuitive_configure 'netuitive'
+#execute 'service netuitive-agent restart'

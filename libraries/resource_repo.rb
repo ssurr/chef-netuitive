@@ -3,10 +3,10 @@
 # license: All rights reserved
 #
 
-# Chef Resource for setting up a netutive_repo
-class NetutiveCookbook::NetutiveRepoResource < Chef::Resource::LWRPBase
-  resource_name :netutive_repo
-  provides :netutive_repo
+# Chef Resource for setting up a netuitive_repo
+class NetuitiveCookbook::NetuitiveRepoResource < Chef::Resource::LWRPBase
+  resource_name :netuitive_repo
+  provides :netuitive_repo
 
   actions :add
   default_action :add
