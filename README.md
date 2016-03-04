@@ -20,7 +20,7 @@ TODO: List your supported platforms.
     <td><tt>node['netuitive']['version']</tt></td>
     <td>string</td>
     <td>The version of the agent to install</td>
-    <td><tt>'0.2.2-68'</tt></td>
+    <td><tt>'0.2.3-70'</tt></td>
   </tr>
   <tr>
     <td><tt>node['netuitive']['repo']['urls']</tt></td>
