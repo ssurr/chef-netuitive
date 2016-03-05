@@ -2,6 +2,8 @@ class NetuitiveCookbook::NetuitiveConfigureProvider < Chef::Provider::LWRPBase
   include NetuitiveCookbook::Helpers
   provides :netuitive_configure
 
+  use_inline_resources
+
   action :create do
     # the default template for netuitive with your API key
     template new_resource.conf_path do
