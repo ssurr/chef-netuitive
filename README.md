@@ -1,5 +1,5 @@
 # netuitive cookbook
-[![Build Status](https://travis-ci.org/majormoses/chef-netuitive.svg?branch=master)](https://travis-ci.org/majormoses/chef-netuitive)
+[![Build Status](https://travis-ci.org/Netuitive/chef-netuitive.svg?branch=master)](https://travis-ci.org/Netuitive/chef-netuitive)
 
 TODO: Enter the cookbook description here.
 
