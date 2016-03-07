@@ -7,4 +7,9 @@ rubofix:
 kitchenconverge:
 	kitchen converge
 
-test: rubotest kitchenconverge
+foodtest:
+	foodcritic .
+
+travisci: rubotest foodtest
+
+test: rubotest foodtest kitchenconverge
