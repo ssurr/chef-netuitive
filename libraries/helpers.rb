@@ -15,6 +15,34 @@ module NetuitiveCookbook
       end
     end
 
+    def determine_init_scripts(new_resource, node)
+      if new_resource.init_scripts
+        new_resource.init_scripts.to_h
+      elsif node['netuitive'] && node['netuitive']['init_scripts']
+        node['netuitive']['init_scripts'].to_h
+      else
+        raise 'could not fetch a list of subsystems'
+      end
+    end
+
+    def systemd?
+      IO.read('/proc/1/comm').chomp == 'systemd'
+    end
+
+    def upstart?
+      File.executable?('/sbin/initctl')
+    end
+
+    def determine_init_subsytem
+      if systemd?
+        'systemd'
+      elsif upstart?
+        'upstart'
+      else
+        'initd'
+      end
+    end
+
     def determine_repo_urls(new_resource, node)
       if new_resource.repo_urls
         new_resource.repo_urls.to_h
@@ -42,6 +70,16 @@ module NetuitiveCookbook
         node['netuitive'] && node['netuitive']['repo']['components'].to_h
       else
         raise 'could not get a list of repo_components'
+      end
+    end
+
+    def determine_repo_priority_pins(new_resource, node)
+      if new_resource.repo_priority_pins
+        new_resource.repo_priority_pins.to_h
+      elsif node['netuitive'] && node['netuitive']['repo']['priority_pins']
+        node['netuitive'] && node['netuitive']['repo']['priority_pins'].to_h
+      else
+        raise 'could not get a hash of repo_priority_pins'
       end
     end
   end

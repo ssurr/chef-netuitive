@@ -8,3 +8,5 @@ version          '0.2.0'
 
 depends 'apt'
 depends 'yum'
+
+%w(ubuntu debian centos redhat)

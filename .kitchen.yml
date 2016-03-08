@@ -8,6 +8,10 @@ provisioner:
 
 platforms:
   - name: ubuntu-14.04
+  - name: debian-8.0
+  - name: centos-7.0
+  - name: centos-6.5
+  # - name: fedora-22
 
 suites:
   - name: default
