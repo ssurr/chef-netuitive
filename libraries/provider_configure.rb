@@ -14,8 +14,8 @@ class NetuitiveCookbook::NetuitiveConfigureProvider < Chef::Provider::LWRPBase
       )
       notifies :restart, 'service[netuitive-agent]'
     end
+
     service 'netuitive-agent' do
-      init_command '/etc/init/netuitive-agent.conf'
       subscribes :restart, new_resource.conf_path.to_s
     end
   end

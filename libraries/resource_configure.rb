@@ -13,4 +13,8 @@ class NetuitiveCookbook::NetuitiveConfigureResource < Chef::Resource::LWRPBase
   attribute(:custom_config_path, kind_of: String, default: '/opt/netuitive-agent/conf/custom_config.conf')
   attribute(:custom_vars, kind_of: Hash, default: nil)
   attribute(:source, kind_of: String, default: 'netuitive-agent.conf.erb')
+  # this will attempt an auto discover and choose init system
+  # in the following order: systemd, upstart, init.d
+  # see helpers module for more info
+  attribute(:init_scripts, kind_of: Hash, default: nil)
 end

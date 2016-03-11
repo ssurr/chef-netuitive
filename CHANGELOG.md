@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.3.0
+### Added
+- Support for epel based systems
+
 ## 0.2.0
 ### Added
 - foodcritic testing
