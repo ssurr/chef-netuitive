@@ -10,7 +10,10 @@ class NetuitiveCookbook::NetuitiveConfigureProvider < Chef::Provider::LWRPBase
       source new_resource.source
       cookbook new_resource.cookbook_template
       variables(
-        api_key: new_resource.api_key
+        api_key: new_resource.api_key,
+        api_url: new_resource.api_url,
+        tags: new_resource.tags,
+        relations: new_resource.relations
       )
       notifies :restart, 'service[netuitive-agent]'
     end
