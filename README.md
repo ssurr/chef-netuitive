@@ -1,13 +1,19 @@
 # netuitive cookbook
 
-[![Join the chat at https://gitter.im/Netuitive/chef-netuitive](https://badges.gitter.im/Netuitive/chef-netuitive.svg)](https://gitter.im/Netuitive/chef-netuitive?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/Netuitive/chef-netuitive.svg?branch=master)](https://travis-ci.org/Netuitive/chef-netuitive)
+[![Join the chat at https://gitter.im/Netuitive/chef-netuitive](https://badges.gitter.im/Netuitive/chef-netuitive.svg)](https://gitter.im/Netuitive/chef-netuitive?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Netuitive/chef-netuitive/master/LICENSE)
 
-TODO: Enter the cookbook description here.
+A cookbook to install and configure the netuitive agent.
 
 ## Supported Platforms
 
-TODO: List your supported platforms.
+### Officially Supported
+We will officially support debian 8, ubuntu 14.04 LTS, centos 6.5, and centos7 and will do automated testing to ensure that we have coverage on these.
+
+### Not officially Supported
+We will attempt to support as many linux distributions as possible and are hoping to expand the above list over time. Any EPEL based system that still supports yum will likely work and are open to PRs to exapnds functionality.
+
 
 ## Attributes
 
