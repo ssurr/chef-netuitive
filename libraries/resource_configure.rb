@@ -9,7 +9,7 @@ class NetuitiveCookbook::NetuitiveConfigureResource < Chef::Resource::LWRPBase
   attribute(:api_url, kind_of: String, default: 'https://api.app.netuitive.com/ingest/infrastructure')
   attribute(:conf_path, kind_of: String, default: '/opt/netuitive-agent/conf/netuitive-agent.conf')
   attribute(:cookbook_template, kind_of: String, default: 'netuitive')
-  # DONT USE THIS UNTIL config maerging is fixed in netuitive/diamond
+  # DONT USE THIS UNTIL config merging is fixed in netuitive/diamond
   attribute(:custom_config_path, kind_of: String, default: '/opt/netuitive-agent/conf/custom_config.conf')
   attribute(:custom_vars, kind_of: Hash, default: nil)
   # an array of relations
