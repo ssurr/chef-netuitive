@@ -53,16 +53,22 @@ keys = rotated_file
 [[NetuitiveHandler]]
 
 ### NetuitiveCloud URL to post the metrics
-url = https://api.app.netuitive.com/ingest/infrastructure
+url = <%= @api_url %>
 
 ### NetuitiveClound Datasource api key
 api_key = <%= @api_key %>
 
 ### Uncomment to add tags
 # tags = tag1:tag1val, tag2:tag2val
+<% unless @tags.empty? %>
+<%= "tags = #{@tags.sort.join(', ')}" %>
+<% end %>
 
 ### Uncomment to add relations
 # relations = element1, element2
+<% unless @relations.empty? %>
+<%= "tags = #{@relations.sort.join(', ')}" %>
+<% end %>
 
 ### Uncomment to add location
 # location = "row A rack 2"
