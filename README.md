@@ -12,7 +12,7 @@ A cookbook to install and configure the netuitive agent.
 We will officially support debian 8, ubuntu 14.04 LTS, centos 6.5, and centos7 and will do automated testing to ensure that we have coverage on these.
 
 ### Not officially Supported
-We will attempt to support as many linux distributions as possible and are hoping to expand the above list over time. Any EPEL based system that still supports yum will likely work and are open to PRs to exapnds functionality.
+We will attempt to support as many linux distributions as possible and are hoping to expand the above list over time. Any EPEL based system that still supports yum will likely work and we are open to PRs to expands functionality.
 
 
 ## Attributes
