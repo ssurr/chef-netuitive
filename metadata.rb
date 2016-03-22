@@ -4,9 +4,11 @@ maintainer_email 'me@benabrams.it'
 license          'All rights reserved'
 description      'Installs/Configures netuitive'
 long_description 'Installs/Configures netuitive'
-version          '0.3.0'
+version          '0.3.1'
 
 depends 'apt'
 depends 'yum'
 
-supports %w(ubuntu debian centos redhat)
+%w(ubuntu debian centos redhat).each do |os|
+  supports os
+end

@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.3.1
+### Fixed
+- bad metadata for platforms supported
+
 ## 0.3.0
 ### Added
 - Support for epel based systems
