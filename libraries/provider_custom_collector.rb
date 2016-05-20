@@ -22,6 +22,7 @@ class NetuitiveCookbook::NetuitiveCustomCollectorProvider < Chef::Provider::LWRP
         source 'collector_generic.conf.erb'
         owner 'root'
         group 'root'
+        cookbook new_resource.cookbook_template
         mode 00744
         variables(
           options: options
