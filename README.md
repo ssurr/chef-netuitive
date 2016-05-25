@@ -6,6 +6,8 @@ Netuitive Cookbook (Chef)
 A cookbook to automate the installataion and configuration of the Netuitive Linux agent. For more
 information on the Netuitive Linux Agent, see the [help docs](https://help.netuitive.com/Content/Misc/Datasources/Netuitive/new_netuitive_datasource.htm) or contact Netuitive support at [support@netuitive.com](mailto:support@netuitive.com).
 
+This cookbook is meant to be consumed by wrapper cookbooks such as this: [wrapper cookbook](https://github.com/CloudCruiser/ops_chef-cc_netuitive)
+
 ### Attributes
 
 | Key | Type | Description | Default |
