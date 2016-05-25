@@ -27,6 +27,7 @@ class NetuitiveCookbook::NetuitiveCollectorProvider < Chef::Provider::LWRPBase
         variables(
           options: options
         )
+        notifies :restart, 'service[netuitive-agent]', :delayed
       end
     end
 
