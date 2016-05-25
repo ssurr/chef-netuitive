@@ -1,6 +1,9 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.10.0
+- make sure that agent restarts when custom collector config changes (is added).
+
 ## 0.9.0
 - Update to latest Netuitive-agent (0.2.9-98)
 
