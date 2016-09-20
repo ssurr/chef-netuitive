@@ -41,7 +41,7 @@ class NetuitiveCookbook::NetuitiveRepoProvider < Chef::Provider::LWRPBase
     when 'rhel', 'fedora'
       Chef::Log.warn 'EPEL based system support is still in the works, please submit an issue on github for any issues you have'
       # we can only use yum-plugin-versionlock if we enable epel repos
-      if new_resource.use_epl_repos
+      if new_resource.use_epel_repos
         yum_repository 'epel' do
           description 'Extra Packages for Enterprise Linux'
           mirrorlist 'http://mirrors.fedoraproject.org/mirrorlist?repo=epel-6&arch=$basearch'

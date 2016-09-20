@@ -18,7 +18,7 @@ class NetuitiveCookbook::NetuitiveRepoResource < Chef::Resource::LWRPBase
   attribute(:repo_urls, kind_of: Hash, default: nil)
 
   # whether or not to enable epel repos on epel based systems
-  attribute(:use_epl_repos, kind_of: [TrueClass, FalseClass], default: true)
+  attribute(:use_epel_repos, kind_of: [TrueClass, FalseClass], default: true)
 
   # if this version parameter is not set by the caller, we look at
   # `attributes/default.rb` for a default value to use, or we raise
