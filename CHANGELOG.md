@@ -3,6 +3,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+# 0.16.0
+- added support for Ubuntu 16.04 LTS and made it an an officially supported platforms
+- updating gem dependencies
+- removed ruby 2.1 support
+- removed chef 11 testing as its support exists in its own brnch and I would not expect any more work done on it.
+- setup travis to run kitchen tests for centos-6 and centos-7 (more to come later)
+
 # 0.15.1
 - fixes template issues when using statsd that were caused in #46. @ziggythehamster
 
